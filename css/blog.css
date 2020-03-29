@@ -1,6 +1,6 @@
 @import "./main.css";
 @import "./post.css";
-@import "./about.css";
+/* @import "./about.css"; */
 
 body {
   display: grid;
@@ -45,7 +45,7 @@ header {
 .nav-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .nav-link {
   line-height: 1.75;
@@ -311,10 +311,6 @@ span.heart {
     width: 100%;
     padding-bottom: 0;
     margin-bottom: 0;
-  }
-  .nav-links {
-    display: flex;
-    flex-direction: column;
   }
 
   .bio-img {
