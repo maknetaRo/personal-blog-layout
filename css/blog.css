@@ -1,9 +1,15 @@
 @import "./main.css";
 @import "./post.css";
+@import "./about.css";
 
 body {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
 }
 
 main,
@@ -22,12 +28,37 @@ aside {
   background: var(--side-bg-color);
   width: 100%;
   justify-content: center;
-  text-align: center;
   text-align: left;
   padding: 1rem 50px;
   color: var(--side-color);
 }
 
+header {
+  grid-area: header;
+}
+
+.navbar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav-link {
+  line-height: 1.75;
+  list-style: none;
+}
+.nav-link a {
+  text-decoration: none;
+}
+
+aside {
+  grid-area: aside;
+  padding-top: 0;
+}
 #main-title {
   padding-bottom: 1rem;
 }
@@ -37,16 +68,41 @@ aside {
 }
 
 .grey-line {
-  width: 150px;
-  height: 2px;
+  width: 100px;
+  height: 1px;
   background-color: var(--date-color);
 }
 
-.subtitle {
+.subtitle,
+.bio-card,
+.latest-posts-card {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
+.bio-card {
+  text-align: left;
+  align-items: center;
+  line-height: 1.5;
+  margin-top: 0;
+  padding-top: 50px;
+}
+
+.bio-img {
+  width: 40%;
+  height: auto;
+  border: 5px solid transparent;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+.read-bio {
+  display: inline-block;
+  padding-top: 1rem;
+}
+
+.latest-posts-card {
+  padding-top: 1rem;
+}
 #featured-posts {
   padding-bottom: 1rem;
 }
@@ -70,7 +126,9 @@ aside {
 }
 
 /* Main Part */
-
+main {
+  grid-area: main;
+}
 .card {
   border-radius: 5px;
   margin-bottom: 4em;
@@ -166,6 +224,7 @@ a.read-more {
 /* Footer */
 
 footer {
+  grid-area: footer;
   padding-top: 3rem;
   color: var(--side-color);
 }
@@ -194,7 +253,7 @@ img {
   transition: 0.3s ease-in-out;
 }
 
-img:hover {
+.img-gallery:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
@@ -237,7 +296,7 @@ span.heart {
 @media (min-width: 760px) {
   body {
     grid-template-columns: fit-content(30%) auto;
-    grid-template-rows: 350px auto 200px;
+    grid-template-rows: 350px auto 300px;
     grid-template-areas:
       "header main"
       "aside  main"
@@ -252,6 +311,9 @@ span.heart {
     padding-bottom: 0;
     margin-bottom: 0;
   }
+  .bio-img {
+    width: 60%;
+  }
 
   #main-title {
     padding-bottom: 50px;
@@ -262,9 +324,11 @@ span.heart {
     flex-direction: row;
   }
 
-  .subtitle {
-    padding-bottom: 50px;
-    padding-top: 50px;
+  .subtitle,
+  .bio-card,
+  .latest-posts-card {
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 
   aside {

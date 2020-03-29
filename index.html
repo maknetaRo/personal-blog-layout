@@ -7,26 +7,45 @@
     <link rel="stylesheet" href="css/blog.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <h1 id="main-title"><a href="/">Coding Journal</a></h1>
       <div class="grey-line"></div>
       <p class="subtitle">by Magdalena Rosłaniec (makneta)</p>
       <div class="grey-line"></div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li class="nav-link"><a href="/">HOME</a></li>
+          <li class="nav-link"><a href="about.html">ABOUT</a></li>
+        </ul>
+      </nav>
     </header>
+    <!-- Side Bar -->
     <aside class="aside">
-      <h3 id="featured-posts">Featured posts</h3>
-      <ul id="posts-list">
-        <li class="list">
-          <a href="posts/post1.html">How to start a Django project</a>
-        </li>
-        <li class="list">
-          <a href="posts/post2.html">Active links in Django</a>
-        </li>
-        <li class="list">
-          <a href="posts/post3.html">First tests in my Django app </a>
-        </li>
-      </ul>
+      <figure class="bio-card">
+        <img src="img/magda.jpg" alt="" class="bio-img" />
+        <figcaption class="bio-desc">
+          Hi! I'm Makneta. Welcome to my blog. I'm an avid learner, Python /
+          Django and CSS Art ethusiast.
+        </figcaption>
+        <a href="" class="read-bio">Read more</a>
+      </figure>
+      <div class="latest-posts-card">
+        <h3 id="featured-posts">Latest posts</h3>
+        <ul id="posts-list">
+          <li class="list">
+            <a href="posts/post1.html">How to start a Django project</a>
+          </li>
+          <li class="list">
+            <a href="posts/post2.html">Active links in Django</a>
+          </li>
+          <li class="list">
+            <a href="posts/post3.html">First tests in my Django app </a>
+          </li>
+        </ul>
+      </div>
     </aside>
+    <!-- Posts -->
     <main class="main">
       <article id="first-post" class="card">
         <div class="top-card" id="first"></div>
@@ -78,6 +97,7 @@
         </div>
       </article>
     </main>
+    <!-- Footer -->
     <footer class="footer">
       <section class="photo-gallery">
         <img src="img/hancza_river.jpg" alt="river" class="img-gallery" />
