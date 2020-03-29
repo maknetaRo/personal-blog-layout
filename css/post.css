@@ -6,6 +6,23 @@
   margin-bottom: 1.5rem;
 }
 
+/* Bio Info */
+
+.post-bio-info {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  border-top: 1px dotted var(--list-border-color);
+  align-items: center;
+  height: 150px;
+}
+#bio-photo {
+  width: 100px;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+  min-width: 80px;
+}
+
 /* Similar posts */
 .similar-posts h3 {
   color: var(--side-color);

@@ -8,31 +8,42 @@
   box-shadow: 1px 3px 3px 1px var(--box-shadow-color);
   padding: 2.5rem 2.5rem 5rem;
 }
+
 .about-title {
   padding-bottom: 2rem;
 }
+
 .description {
   line-height: 1.5;
   text-align: justify;
 }
+
 .about-picture {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
 }
+
 .about-img {
-  max-width: 500px;
+  max-width: 400px;
 }
+
+.about-img:hover {
+  transform: scale(1.05);
+}
+
 .intro {
   font-size: 1.1rem;
   letter-spacing: 1px;
 }
+
 blockquote {
   background: var(--main-bg-color);
   border-left: 10px solid var(--btn-bg-color);
   margin: 1.5em 10px;
-  padding: 0.5em 10px;
+  padding: 1rem;
+  padding-left: 2rem;
   line-height: 1.5;
   letter-spacing: 1px;
 }
