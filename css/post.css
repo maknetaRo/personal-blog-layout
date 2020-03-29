@@ -15,6 +15,14 @@
   border-top: 1px dotted var(--list-border-color);
   align-items: center;
   height: 150px;
+  line-height: 1.5;
+}
+.written-by {
+  font-style: oblique;
+}
+.author-name {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 #bio-photo {
   width: 100px;
