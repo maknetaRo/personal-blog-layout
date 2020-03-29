@@ -45,7 +45,6 @@ header {
 .nav-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
 }
 .nav-link {
   line-height: 1.75;
@@ -53,6 +52,7 @@ header {
 }
 .nav-link a {
   text-decoration: none;
+  padding-right: 2rem;
 }
 
 aside {

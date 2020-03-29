@@ -28,6 +28,7 @@
 
 .about-img {
   max-width: 290px;
+  height: auto;
 }
 
 .about-img:hover {
