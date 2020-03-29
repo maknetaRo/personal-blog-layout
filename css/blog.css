@@ -1,6 +1,6 @@
 @import "./main.css";
 @import "./post.css";
-/* @import "./about.css"; */
+@import "./about.css";
 
 body {
   display: grid;
