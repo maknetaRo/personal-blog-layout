@@ -1,0 +1,30 @@
+.card {
+  margin-bottom: 1.5rem;
+}
+.similar-posts h3 {
+  color: rgba(0, 0, 0, 0.7);
+}
+.similar-row {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.figure {
+  width: 33%;
+}
+.fig {
+  padding: 0.25rem 0;
+  text-align: center;
+}
+.figure a {
+  outline: none;
+}
+.similar-img {
+  width: 100%;
+  height: auto;
+  border: 5px solid transparent;
+}
+.similar-img:hover {
+  transform: scale(1.05);
+}
