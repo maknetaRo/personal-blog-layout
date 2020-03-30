@@ -59,7 +59,8 @@
 .similar-img {
   width: 100%;
   height: auto;
-  border: 5px solid transparent;
+  border: 8px solid transparent;
+  border-radius: 15px;
 }
 
 .similar-img:hover {
